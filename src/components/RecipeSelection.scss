@@ -1,0 +1,78 @@
+@import './variables.scss';
+
+.selection-div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    width: 100vw;
+    height: 100%;
+    justify-content: center;
+
+    border: none;
+    padding: 7% 0% 5% 0%;
+}
+
+.selection-inner {
+    width: 60vw;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.selection-single {
+    width: 20vmax;
+    height: 20vmax;
+    border: none;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container-h3 {
+    width: 20vmax;
+    padding: 2% 0%;
+    margin-left: -20vmax;
+
+    text-align: center;
+    cursor: pointer;
+}
+
+.selection-h3 {
+    background: rgba(13, 12, 19, 0.705);
+    color: $color-white;
+    font-family: $font-primary;
+    font-size: 1.5rem;
+    font-weight: 300;
+
+    padding: 2%;
+    margin-top: 37%;
+}
+
+.container-h3:hover 
+.selection-h3 {
+    background: $color-white;
+    color: $color-black;
+    transition-duration: 0.5s;
+}
+
+@media only screen and (max-width: 1300px) {
+    .selection-inner {
+        width: 65vw;
+        padding-top: 4%;
+    }
+}
+@media only screen and (max-width: 800px) {
+    .selection-inner {
+        padding-top: 10%;
+    }
+}
+@media only screen and (max-width: 650px) {
+    .selection-h3 {
+        font-size: 1.2rem;
+    }
+    .selection-inner {
+        width: 80vw;
+    }
+}

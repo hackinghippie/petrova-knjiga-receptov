@@ -1,0 +1,92 @@
+@import "./variables";
+
+.categories-div {
+    width: 100vw;
+    min-height: 85vh;
+    padding: 7% 0%;
+    display: flex;
+    justify-content: center;
+}
+
+.categories-inner {
+    height: 100%;
+}
+
+.category-btn {
+    display: flex;
+    width: 30vw;
+    height: 25vh;
+    transition-duration: 0.5s;
+    border: none;
+    cursor: pointer;
+}
+    .category-btn:hover
+    h2 {
+        color: $color-black;
+        background: $color-white;
+        transition-duration: 1s;
+    }
+
+.hrana {
+    background-image: url("../images/hrana.png");
+    height: 11vmax;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    
+}
+.pijača {
+    background-image: url("../images/pijača.png");
+    height: 11vmax;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.sladice{
+    background-image: url("../images/sladice.png");
+    height: 11vmax;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.ostalo {
+    background-image: url("../images/ostalo.png");
+    height: 11vmax;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.category-h2 {
+    font-family: $font-primary;
+    font-weight: 400;
+    font-size: 2.5rem;
+    color: $color-white;
+
+    width: 100%;
+    
+    background: rgba(48, 43, 71, 0.9);
+    padding: 1% 2%;
+
+    margin-top: 13%;
+
+    transition-duration: 1s;
+}
+
+@media only screen and (max-width: 1700px) {
+    .category-btn {
+        width: 35vw;
+        height: 25vh;
+    }
+    .categories-div {
+        padding: 10% 0%;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .categories-div {
+        padding: 15% 0%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .category-btn {
+        height: 20vh;
+    }
+}

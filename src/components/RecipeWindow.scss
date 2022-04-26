@@ -1,0 +1,105 @@
+@import './variables.scss';
+
+.container {
+    font-family: $font-primary;
+    display: flex;
+    justify-content: center;
+    padding: 130px 0% 5% 0%;
+}
+
+.container-inner {
+    display: flex;
+}
+
+.container-img-ing {
+    display: flex;
+    flex-direction: column;
+    width: 25vw;
+}
+
+.recipe-img {
+    width: 100%;
+    height: 100%;
+}
+
+.ingredients {
+    background: $color-space;
+    padding: 5%;
+    color: $color-white;
+    letter-spacing: 1px;
+    height: 100%;
+}
+
+.recipe-h3 {
+    padding-bottom: 3%;
+    font-size: 1.5rem;
+}
+
+.ingredients-p {
+    padding: 4%;
+    font-size: 1.3rem;
+    text-decoration: none;
+}
+
+.container-tit-desc-rec {
+    display: flex;
+    flex-direction: column;
+
+    width: 50vw;
+}
+
+.title { 
+    background: $color-citrine;
+    font-size: 2.5rem;
+    padding: 2%;
+}
+
+.desc {
+    background: $color-space;
+    padding: 1% 1% 1% 2%;
+    color: $color-white;
+    font-style: italic;
+}
+
+.recipe {
+    background: $color-white;
+    padding: 1% 1% 1% 2%;
+    height: 100%;
+}
+
+
+
+.recipe-p {
+    padding: 4%;
+    font-size: 1.3rem;
+    text-align: justify;
+    text-decoration: none;
+}
+
+
+
+
+
+@media only screen and (max-width: 1000px) {
+    .container-img-ing {
+        width: 30vw;
+    }
+    .container-tit-desc-rec {
+        width: 55vw;
+    }
+}
+@media only screen and (max-width: 800px) {
+    .img { 
+        display: none;
+    }
+    .container-img-ing {
+        width: 35vw;
+    }
+    .container-tit-desc-rec {
+        width: 60vw;
+    }
+    .ingredients-p {
+        font-size: 1rem;
+    }
+}
+

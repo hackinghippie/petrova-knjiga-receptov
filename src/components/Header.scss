@@ -1,0 +1,27 @@
+@import './variables.scss';
+
+.header {
+    width: 100%;
+    font-family: $font-primary;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    background-color: $color-space;
+    color: $color-white;
+    z-index: 1;
+    cursor: default;
+}
+
+.header-inner {
+    padding: 1% 3%;
+    font-size: 1.2rem;
+}
+
+@media only screen and (max-width: 650px) {
+    .header {
+        height: 50px;
+    }
+    .header-inner {
+        font-size: 0.9rem;
+    }
+}
